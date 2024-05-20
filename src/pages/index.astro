@@ -1,9 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Nav from "./../components/Nav.astro"
-import Banner from "./../components/Banner.astro"
+import Banner from "./../components/Banner.astro";
+import NavBar from "../components/NavBar.astro";
 ---
+
 <Layout title="Ruta Dorada">
-    <Nav/>
-    <Banner/>
+  <div class="flex flex-col gap-3 p-3">
+    <NavBar />
+    <Banner />
+  </div>
 </Layout>
+

@@ -1,0 +1,38 @@
+---
+import Bars from "../icons/Bars.astro";
+import { t } from "../utils/i18n";
+import i18n from "../utils/i18n";
+
+const changeLanguage = (lng: string) => {
+  i18n.changeLanguage(lng);
+};
+---
+
+<nav class="navbar bg-gray-50 rounded-lg shadow-lg">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <Bars />
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gray-50 rounded-box w-52">
+        <li><a>{t('navDestinos')}</a></li>
+        <li><a>{t('navNosotros')}</a></li>
+        <li><a>{t('navBlog')}</a></li>
+      </ul>
+    </div>
+    <a class="btn btn-ghost text-xl text-neutral">Ruta Dorada</a>
+  </div>
+  <div class="navbar-center hidden lg:flex items-center">
+    <ul class="menu menu-horizontal px-1 text-gray-700">
+      <li><button @click={() => changeLanguage('es')}>🇵🇪 Spanish</button></li>
+      <li><button @click={() => changeLanguage('en')}>🇺🇸 English</button></li>
+    </ul>
+  </div>
+  <div class="navbar-end hidden lg:flex items-center">
+    <ul class="menu menu-horizontal px-1 text-gray-700">
+      <li><a>{t('navDestinos')}</a></li>
+      <li><a>{t('navNosotros')}</a></li>
+      <li><a>{t('navBlog')}</a></li>
+    </ul>
+  </div>
+</nav>
