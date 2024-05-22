@@ -17,7 +17,7 @@ i18n.init({
       },
     },
   },
-  lng: "en", // Idioma por defecto
+  lng: "es", // Idioma por defecto
   fallbackLng: "es", // Idioma de respaldo
   interpolation: { escapeValue: false },
 });
