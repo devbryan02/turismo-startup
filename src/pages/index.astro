@@ -4,19 +4,20 @@ import Banner from "./../components/Banner.astro";
 import NavBar from "../components/NavBar.astro";
 import Descubre from "../components/Descubre.astro";
 import Mission from "../components/Mission.astro";
-import Vission from "../components/Vission.astro"
+import Vission from "../components/Vission.astro";
+import Beneficios from "../components/Beneficios.astro";
 ---
 
 <Layout title="Ruta Dorada">
   <div class="flex flex-col">
     <NavBar />
     <Banner />
-    <Descubre/>
+    <Descubre />
+    <Beneficios />
     <div class="grid grid-cols-1 md:grid-cols-2">
-      <Mission/>
-      <Vission/>
+      <Mission />
+      <Vission />
     </div>
-    <br><br>
+    <br />
   </div>
 </Layout>
-

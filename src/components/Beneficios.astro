@@ -1,0 +1,27 @@
+---
+import CardsBeneficios from "../cards/CardsBeneficios.astro";
+import PathIcon from "../icons/PathIcon.astro";
+import InfoIcon from "../icons/InfoIcon.astro";
+import VideoIcon from "../icons/VideoIcon.astro"
+---
+
+<div class="grid grid-cols-1 md:grid-cols-3 justify-items-stretch mt-3">
+  <CardsBeneficios
+    clasName="flex flex-col gap-2 justify-center items-center p-5 md:p-10 "
+    message="En ruta dorada, nos comprometemos en conectar a los viajeros con experiencias inolvidables. Nuestros usuarios serán capaces de elegir y visitar destinos poco conocidos de nuestra región. "
+  >
+    <PathIcon />
+  </CardsBeneficios>
+  <CardsBeneficios
+    clasName="flex flex-col gap-2 justify-center items-center p-5 md:p-10 "
+    message="Ofrecemos información detallada a través de fotos, videos y mapas interactivos, para que puedas planificar y disfrutar al máximo tu viaje a los destinos que elijas explorar."
+  >
+    <InfoIcon />
+  </CardsBeneficios>
+  <CardsBeneficios
+    clasName="flex flex-col gap-2 justify-center items-center p-5 md:p-10"
+    message="En nuestros planes esta el brindarle la información necesaria que le permita desenvolverse y disfrutar del viaje que usted escoja por medio de las fotos, videos y el mapa interactivo  de los lugares a visitar. "
+  >
+    <VideoIcon />
+  </CardsBeneficios>
+</div>
