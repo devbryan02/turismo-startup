@@ -1,0 +1,20 @@
+---
+interface Props {
+  srcImg: string;
+  name: string;
+  text: string;
+}
+const { srcImg, name, text } = Astro.props;
+---
+
+<div
+  class=" gap-5 p-10 flex flex-col justify-center items-center w-[500px] h-[300px]"
+>
+  <figure>
+    <img class="rounded-full" src={srcImg} alt="images de clientes" width="100px" />
+  </figure>
+  <div class="flex flex-col justify-center items-center gap-5">
+    <h5 class="text-gray-800">{name}</h5>
+    <p class="text-center text-sm text-gray-600">{text}</p>
+  </div>
+</div>
