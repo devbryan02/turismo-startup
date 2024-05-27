@@ -10,7 +10,7 @@ const changeLanguage = (lng: string) => {
 
 ---
 
-<nav class="navbar bg-gray-50">
+<nav class="navbar bg-[#0D2831]">
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -24,17 +24,17 @@ const changeLanguage = (lng: string) => {
     </div>
     <div class="flex items-center">
       <img src="logo.jpeg" alt="logo ruta dorada" width="50px" class="rounded-full">
-      <a class="btn btn-ghost text-xl text-neutral">Ruta Dorada</a>
+      <a href="/" class="btn btn-ghost text-xl text-gray-200">Ruta Dorada</a>
     </div>
   </div>
   <div class="navbar-center hidden lg:flex items-center">
-    <ul class="menu menu-horizontal px-1 text-gray-700">
+    <ul class="menu menu-horizontal px-1 text-gray-200">
       <li><button @click={() => changeLanguage('es')}>🇵🇪 Spanish</button></li>
       <li><button @click={() => changeLanguage('en')}>🇺🇸 English</button></li>
     </ul>
   </div>
   <div class="navbar-end hidden lg:flex items-center">
-    <ul class="menu menu-horizontal px-1 text-gray-700">
+    <ul class="menu menu-horizontal px-1 text-gray-200">
       <li><a>{t('navDestinos')}</a></li>
       <li><a>{t('navNosotros')}</a></li>
       <li><a>{t('navBlog')}</a></li>
