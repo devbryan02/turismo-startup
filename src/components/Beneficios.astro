@@ -2,25 +2,30 @@
 import CardsBeneficios from "../cards/CardsBeneficios.astro";
 import PathIcon from "../icons/PathIcon.astro";
 import InfoIcon from "../icons/InfoIcon.astro";
-import VideoIcon from "../icons/VideoIcon.astro"
+import VideoIcon from "../icons/VideoIcon.astro";
 ---
 
-<div class="grid grid-cols-1 md:grid-cols-3 justify-items-stretch bg-[#138857]  mt-5 md:mt-20">
+<div
+  class="grid grid-cols-1 md:grid-cols-3 justify-items-center bg-[#138857] mt-5 md:mt-20 p-5 md:p-10"
+>
   <CardsBeneficios
+    title="Descubre la Ruta Dorada"
     clasName="flex flex-col gap-2 justify-center items-center p-5 md:p-10 "
-    message="En ruta dorada, nos comprometemos en conectar a los viajeros con experiencias inolvidables. Nuestros usuarios serán capaces de elegir y visitar destinos poco conocidos de nuestra región. "
+    message="En Ruta Dorada, nos comprometemos en conectar viajeros con experiencias inolvidables, elegir y visitar destinos poco conocidos de nuestra región, ofreciendo experiencias únicas."
   >
     <PathIcon />
   </CardsBeneficios>
   <CardsBeneficios
+    title="Planifica tu Viaje con Nuestra Guía"
     clasName="flex flex-col gap-2 justify-center items-center p-5 md:p-10 "
     message="Ofrecemos información detallada a través de fotos, videos y mapas interactivos, para que puedas planificar y disfrutar al máximo tu viaje a los destinos que elijas explorar."
   >
     <InfoIcon />
   </CardsBeneficios>
   <CardsBeneficios
+    title="Disfruta de tu Viaje con Nuestra Guía"
     clasName="flex flex-col gap-2 justify-center items-center p-5 md:p-10"
-    message="En nuestros planes esta el brindarle la información necesaria que le permita desenvolverse y disfrutar del viaje que usted escoja por medio de las fotos, videos y el mapa interactivo  de los lugares a visitar. "
+    message="En nuestros planes está brindarle la información necesaria para desenvolverse y disfrutar del viaje que elige, a través de fotos, videos y mapas interactivos de los lugares a visitar."
   >
     <VideoIcon />
   </CardsBeneficios>

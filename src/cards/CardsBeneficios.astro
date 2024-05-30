@@ -1,10 +1,11 @@
 ---
 interface Props {
   message: string;
-  clasName:string
+  clasName:string;
+  title:string
 }
 
-const { message, clasName } = Astro.props;
+const { message, clasName, title } = Astro.props;
 ---
 
 <div class={clasName}>
@@ -12,6 +13,7 @@ const { message, clasName } = Astro.props;
     <slot />
   </div>
   <div>
+    <h5 class="text-center font-semibold text-gray-200 mb-2">{title}</h5>
     <p class="text-center text-gray-100">{message}</p>
   </div>
 </div>
